@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		- let layout = { header: true, footer: true }
+		meta(name='keywords', content=keywords || site.keywords)
+		meta(name='description', content=description || site.description)
+
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name='description')
+		meta(name='author')
+
+		link(rel='stylesheet', href='/htwo/stylesheets/style.css')
+		link(rel='shortcut icon', href='/htwo/images/favicon.ico')
+
+		if site
+			!= site.code.header
+
+	body
+
+
+		block content
+
+		if layout.footer
+			include lib/footer
+	script(src='/htwo/javascripts/jquery.js')
+	script(src='/htwo/javascripts/jquery.easing.1.3.js')
+	script(src='/htwo/javascripts/bootstrap.min.js')
+	script(src='/htwo/javascripts/jquery.fancybox.pack.js')
+	script(src='/htwo/javascripts/jquery.fancybox-media.js')
+	script(src='/htwo/javascripts/jquery.flexslider.js')
+	script(src='/htwo/javascripts/animate.js')
+	script(src='/htwo/javascripts/modernizr.custom.js')
+	script(src='/htwo/javascripts/jquery.isotope.min.js')
+	script(src='/htwo/javascripts/jquery.magnific-popup.min.js')
+	script(src='/htwo/javascripts/animate.js')
+	script(src='/htwo/javascripts/custom.js')
+	script(src='/htwo/javascripts/owl-carousel/owl.carousel.js')
+
+
+	block script
+
+	if site
+		!= site.code.footer

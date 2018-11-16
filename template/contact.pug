@@ -1,0 +1,46 @@
+extends layout
+
+block content
+	include lib/header
+	section#inner-headline
+		.container
+			.row
+				.col-lg-12
+					h2.pageTitle 联系我们
+	section#content
+		.container
+			.row
+				.col-md-12
+					.about-logo
+						h3 Voluptatem Accusantium Doloremque
+						p
+						| Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+						p
+						| Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+			.row
+				.col-md-6
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor.
+					form#contactForm(name='sentMessage', novalidate='')
+						h3 联系我们
+						.control-group
+							.controls
+								input#name.form-control(type='text', placeholder='姓名', required='', data-validation-required-message='Please enter your name')
+								p.help-block
+						.control-group
+							.controls
+								input#email.form-control(type='email', placeholder='邮箱', required='', data-validation-required-message='Please enter your email')
+						.control-group
+							.controls
+								textarea#message.form-control(rows='10', cols='100', placeholder='留言信息', required='', data-validation-required-message='Please enter your message', minlength='5', data-validation-minlength-message='Min 5 characters', maxlength='999', style='resize:none')
+						#success  
+						button.btn.btn-primary.pull-right(type='submit') 发送
+						br
+				.col-md-6
+					script(type='text/javascript', src='http://maps.google.com/maps/api/js?sensor=false')
+					div(style='overflow:hidden;height:500px;width:600px;')
+						#gmap_canvas(style='height:500px;width:600px;')
+						style.
+						#gmap_canvas img{max-width:none!important;background:none!important}
+						a#get-map-data.google-map-code(href='http://www.trivoo.net') trivoo
+
+

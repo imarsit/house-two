@@ -1,0 +1,121 @@
+extends layout
+
+block content
+	include lib/header
+	section#inner-headline
+		.container
+			.row
+				.col-lg-12
+					h2.pageTitle 项目
+	section#content
+		.container
+			.row
+				.col-md-12
+					.about-logo
+						h3 Voluptatem Accusantium Doloremque
+						p
+							| Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+						p
+							| Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+	section#gallery-1.content-block.section-wrapper.gallery-1
+		.container
+			.editContent
+				ul.filter
+					li.active
+						a(href='#', data-filter='*') 全部
+					li
+						a(href='#', data-filter='.apartments') 公寓
+					li
+						a(href='#', data-filter='.villas') Villas
+					li
+						a(href='#', data-filter='.commercial') 商业广告
+					li
+						a(href='#', data-filter='.gated') Gated
+					li
+						a(href='#', data-filter='.housing') 住房
+			.row
+				#isotope-gallery-container
+					.col-md-4.col-sm-6.col-xs-12.gallery-item-wrapper.apartments.villas
+						.gallery-item
+							.gallery-thumb
+								img.img-responsive(src='/htwo/images/projects/1.jpg', alt='1st gallery Thumb')
+								.image-overlay
+								a.gallery-zoom(href='/htwo/images/projects/1.jpg')
+									i.fa.fa-eye
+								a.gallery-link(href='#')
+									i.fa.fa-link
+							.gallery-details
+								.editContent
+									h5 第一通道项目
+								.editContent
+									p Nullam id dolor id nibh ultricies vehicula.
+					.col-md-4.col-sm-6.col-xs-12.gallery-item-wrapper.commercial.gated
+						.gallery-item
+							.gallery-thumb
+								img.img-responsive(src='/htwo/images/projects/2.jpg', alt='2nd gallery Thumb')
+								.image-overlay
+								a.gallery-zoom(href='/htwo/images/projects/2.jpg')
+									i.fa.fa-eye
+								a.gallery-link(href='#')
+									i.fa.fa-link
+							.gallery-details
+								.editContent
+									h5 第二通道项目
+								.editContent
+									p Nullam id dolor id nibh ultricies vehicula.
+					.col-md-4.col-sm-6.col-xs-12.gallery-item-wrapper.housing.apartments
+						.gallery-item
+							.gallery-thumb
+								img.img-responsive(src='/htwo/images/projects/3.jpg', alt='3rd gallery Thumb')
+								.image-overlay
+								a.gallery-zoom(href='/htwo/images/projects/3.jpg')
+									i.fa.fa-eye
+								a.gallery-link(href='#')
+									i.fa.fa-link
+							.gallery-details
+								.editContent
+									h5 第三通道项目
+								.editContent
+									p Nullam id dolor id nibh ultricies vehicula.
+					.col-md-4.col-sm-6.col-xs-12.gallery-item-wrapper.villas.commercial
+						.gallery-item
+							.gallery-thumb
+								img.img-responsive(src='/htwo/images/projects/4.jpg', alt='4th gallery Thumb')
+								.image-overlay
+								a.gallery-zoom(href='/htwo/images/projects/4.jpg')
+									i.fa.fa-eye
+								a.gallery-link(href='#')
+									i.fa.fa-link
+							.gallery-details
+								.editContent
+									h5 第四通道项目
+								.editContent
+									p Nullam id dolor id nibh ultricies vehicula.
+					.col-md-4.col-sm-6.col-xs-12.gallery-item-wrapper.commercial
+						.gallery-item
+							.gallery-thumb
+								img.img-responsive(src='/htwo/images/projects/5.jpg', alt='5th gallery Thumb')
+								.image-overlay
+								a.gallery-zoom(href='/htwo/images/projects/5.jpg')
+									i.fa.fa-eye
+								a.gallery-link(href='#')
+									i.fa.fa-link
+							.gallery-details
+								.editContent
+									h5 第五通道项目
+								.editContent
+									p Nullam id dolor id nibh ultricies vehicula.
+					.col-md-4.col-sm-6.col-xs-12.gallery-item-wrapper.apartments.villas
+						.gallery-item
+							.gallery-thumb
+								img.img-responsive(src='/htwo/images/projects/6.jpg', alt='6th gallery Thumb')
+								.image-overlay
+								a.gallery-zoom(href='/htwo/images/projects/6.jpg')
+									i.fa.fa-eye
+								a.gallery-link(href='#')
+									i.fa.fa-link
+							.gallery-details
+								.editContent
+									h5 第六通道项目
+								.editContent
+									p Nullam id dolor id nibh ultricies vehicula.

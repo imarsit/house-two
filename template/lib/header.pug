@@ -1,0 +1,44 @@
+wrapper.home-page
+  .topbar
+    .container
+      .row
+        .col-md-12
+          p.pull-left.hidden-xs Welcome
+          p.pull-right
+            i.fa.fa-phone
+            | Tel No. (+0771) 3216-270
+  header
+    .navbar.navbar-default.navbar-static-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/')
+            img(src='/htwo/images/header/mars-logo.jpg', alt='logo')
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') 首页
+            li.dropdown
+              a.dropdown-toggle(href='about', data-toggle='dropdown')
+                | 关于我们 
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='about') 企业
+                li
+                  a(href='#') 团队
+                li
+                  a(href='#') 新闻
+                li
+                  a(href='#') 投资
+            li
+              a(href='services') 服务
+            li
+              a(href='projects') 产品
+            li
+              a(href='pricing') 定价
+            li
+              a(href='contact') 联系我们

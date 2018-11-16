@@ -1,0 +1,153 @@
+extends layout
+
+block content
+	include lib/header
+
+	section#inner-headline
+		.container
+			.row
+				.col-lg-12
+					h2.pageTitle 关于我们
+	section#content
+		section.section-padding
+			.container
+				.row.showcase-section
+					.col-md-6
+						img(src='/htwo/images/about/dev1.png')
+					.col-md-6
+						.about-text
+							h3 南宁火星人信息科技有限公司
+							p
+							| 南宁火星人信息科技有限公司由留学人员杜聪回国创办，是一家致力于电子商务系统研发及提供相关配套增值服务的企业，公司在英国伦敦设有分部。公司将凭借总经理多年在英国为多家电子商务和网络媒体公司提供咨询服务的经验，能够为正在从事或即将设计电子商务的企业提供配套的增值性的咨询服务，其中包括电子商务整合方案策划，B2B,B2C整体解决方案，移动APP解决方案，网络媒体市场营销，网络品牌及形象推广，网络用户调研，数据采集和经济模型分析，项目预算与评估，财务分析和融资方案等。
+							p
+							| "火星人"——人是互联，社交的最基本元素，作为一家以人为本的互联网企业，团队是公司的核心竞争力，我们始终坚持用最前沿的技术助力企业转型互联网+，实现全球化，数据化和智能化..
+		.container
+			.about
+				.row
+					.col-md-4
+						.block-heading-two
+							h3
+								span 为什么选择我们？
+						p
+						| 火星人独有的高效协同工作和沟通方式，轻松沟通便可让企业客户将业务流程顺畅的转化为专业的技术需求文档。让技术不在变得难理解，让开发的每个环节变得更流畅. 
+						br
+						br
+						| 充分发挥数据优势和机器学习的优势，以最实时的方式监测产品和服务质量，并能以开放的方式进行深度的业务分析，帮助用户全面掌握每一份有效数据，做最精准的商业决策
+					.col-md-4
+						.block-heading-two
+							h3
+								span 解决方案
+						#accordion-alt3.panel-group
+							.panel
+								.panel-heading
+									h4.panel-title
+										a(data-toggle='collapse', data-parent='#accordion-alt3', href='#collapseOne-alt3')
+											i.fa.fa-angle-right
+											| 功能完善，操做简单
+								#collapseOne-alt3.panel-collapse.collapse
+									.panel-body
+									| 涵盖营销管理、智慧硬件管理、POS管理和Ibeacon管理。非技术人员轻松操作
+							.panel
+								.panel-heading
+									h4.panel-title
+										a(data-toggle='collapse', data-parent='#accordion-alt3', href='#collapseTwo-alt3')
+											i.fa.fa-angle-right
+											|  多商家多业体态
+								#collapseTwo-alt3.panel-collapse.collapse
+									.panel-body
+									| 帮助景区多业态多商家营销统一管理、整合营销
+							.panel
+								.panel-heading
+									h4.panel-title
+										a(data-toggle='collapse', data-parent='#accordion-alt3', href='#collapseThree-alt3')
+											i.fa.fa-angle-right
+											|  互联开发，接入简单
+								#collapseThree-alt3.panel-collapse.collapse
+									.panel-body
+									| 开放API接口，允许第三方接入二次开发
+							.panel
+								.panel-heading
+									h4.panel-title
+										a(data-toggle='collapse', data-parent='#accordion-alt3', href='#collapseFour-alt3')
+											i.fa.fa-angle-right
+											|  智慧智能
+								#collapseFour-alt3.panel-collapse.collapse
+									.panel-body
+									| 对接智慧停车、人流监控等各种智慧硬件，实现景区数据即时分析，客户画像、消费行为、营销分析助力景区精准消费
+					.col-md-4
+						.block-heading-two
+							h3
+							span 专业知识
+						h6 网站开发
+						.progress.pb-sm
+							.progress-bar.progress-bar-red(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+							span.sr-only 40% Complete (success)
+						h6 设计
+						.progress.pb-sm
+							.progress-bar.progress-bar-green(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+							span.sr-only 40% Complete (success)
+						h6 用户体验
+						.progress.pb-sm
+							.progress-bar.progress-bar-lblue(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+							span.sr-only 40% Complete (success)
+						h6 发展
+						.progress.pb-sm
+							.progress-bar.progress-bar-yellow(role='progressbar', aria-valuenow='30', aria-valuemin='0', aria-valuemax='100', style='width: 30%')
+							span.sr-only 40% Complete (success)
+
+
+			section.section-padding
+				.container
+					.row
+						.col-md-6.col-sm-6
+							.about-text
+								h3
+									span 我们的组织
+								p
+								| "火星人"——人是互联，社交的最基本元素，作为一家以人为本的互联网企业，团队是公司的核心竞争力，我们始终坚持用最前沿的技术助力企业转型互联网+，实现全球化，数据化和智能化
+								ul.withArrow
+									li
+										span.fa.fa-angle-right
+										|  客户第一：客户满意是我们的唯一目标
+									li
+										span.fa.fa-angle-right
+										|  服务第一：我们的服务标准——细致、细致、再细致
+									li
+										span.fa.fa-angle-right
+										|  产品第一：服务即产品，确保为客户提供优质且高性价比的服务
+									li
+										span.fa.fa-angle-right
+										|  团队第一：重视集体观念，团队利益优先
+									li
+										span.fa.fa-angle-right
+										|  质量第一：用户至上，质量是最好的推销员
+									li
+										span.fa.fa-angle-right
+										|  创新第一：广纳一流人才，打造一流的企业，勇于突破，大胆创新
+						.col-md-6.col-sm-6
+							.about-image
+								img(src='/htwo/images/about/about.jpg', alt='About Images')
+				br
+			.team-six
+			.row
+				.col-md-3.col-sm-6
+					.team-member
+						img.img-responsive(src='/htwo/images/about/team1.jpg', alt='')
+						h4 Johne Doe
+						span.deg 设计师
+				.col-md-3.col-sm-6
+					.team-member
+						img.img-responsive(src='/htwo/images/about/team2.jpg', alt='')
+						h4 Jennifer
+						span.deg 程序员
+				.col-md-3.col-sm-6
+					.team-member
+						img.img-responsive(src='/htwo/images/about/team3.jpg', alt='')
+						h4 Christean
+						span.deg 总裁
+				.col-md-3.col-sm-6
+					.team-member
+						img.img-responsive(src='/htwo/images/about/team4.jpg', alt='')
+						h4 Kerinele rase
+						span.deg 经理
+			
