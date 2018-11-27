@@ -511,7 +511,7 @@ img.img-center {
 .testimonial-area {
   padding: 0 0 0 0;
   margin: 0;
-  background: url(/htwo/images/home/low-poly01.jpg) fixed center center;
+  background: url(/public/images/home/low-poly01.jpg) fixed center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -550,19 +550,19 @@ section.hero-text h1 {
   border-radius: 8px;
 }
 #clients .client .client1 {
-  background: url("/htwo/images/home/client1.png") 0 -75px;
+  background: url("/public/images/home/client1.png") 0 -75px;
 }
 #clients .client .client1:hover {
   background-position: 1px 0px;
 }
 #clients .client .client2 {
-  background: url("/htwo/images/home/client2.png") 0 -75px;
+  background: url("/public/images/home/client2.png") 0 -75px;
 }
 #clients .client .client2:hover {
   background-position: -1px 0px;
 }
 #clients .client .client3 {
-  background: url("/htwo/images/home/client3.png") 0 -76px;
+  background: url("/public/images/home/client3.png") 0 -76px;
 }
 #clients .client .client3:hover {
   background-position: 0px 0px;
@@ -773,7 +773,7 @@ form#commentform textarea {
   margin-bottom: 20px;
 }
 #call-to-action {
-  background: url(/htwo/images/home/bg/about.jpg) no-repeat;
+  background: url(/public/images/home/bg/about.jpg) no-repeat;
   background-attachment: fixed;
   background-position: top center;
   padding: 100px 0;
